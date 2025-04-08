@@ -52,34 +52,40 @@ const SignIn: React.FC = (): JSX.Element => {
   };
 
   return (
-         <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-white to-orange-200 px-4">
-                <Card className="w-full max-w-md rounded-2xl p-8 shadow-2xl">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-white to-orange-200 px-4">
+      <Card className="w-full max-w-md rounded-2xl p-8 shadow-2xl">
         <FormProvider {...methods}>
-        <form onSubmit={handleSubmit(onSubmit)} noValidate className="w-full max-w-sm space-y-6">
-  <div className="flex justify-center mb-4">
-    <Image
-      src="/cookery.jpg"
-      alt="cookery"
-      width={120}
-      height={20}
-      className="object-contain"
-    />
-  </div>
-
-  <div className="text-center mb-2">
-    <h2 className="text-2xl font-semibold text-gray-800">Sign in to your account</h2>
-  </div>
-
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            noValidate
+            className="w-full max-w-sm space-y-6"
+          >
+            <div className="flex justify-center mb-4">
+              <Image
+                src="/cookery.jpg"
+                alt="cookery"
+                width={120}
+                height={20}
+                className="object-contain"
+              />
+            </div>
+  
+            <div className="text-center mb-6">
+              <h2 className="text-2xl font-semibold text-gray-800">
+                Sign in to your account
+              </h2>
+            </div>
+  
             {formError && (
-             <div className="mb-4">
-             <Alert
-               setAlertOpen={handleFormError}
-               content="INCORRECT_EMAIL_OR_PASSWORD"
-               severity="error"
-             />
-           </div>
+              <div className="mb-4">
+                <Alert
+                  setAlertOpen={handleFormError}
+                  content="INCORRECT_EMAIL_OR_PASSWORD"
+                  severity="error"
+                />
+              </div>
             )}
-
+  
             <div>
               <Field
                 {...register('email')}
@@ -88,7 +94,7 @@ const SignIn: React.FC = (): JSX.Element => {
                 helperText={emailError?.message}
               />
             </div>
-
+  
             <div>
               <Field
                 {...register('password')}
@@ -98,27 +104,26 @@ const SignIn: React.FC = (): JSX.Element => {
                 helperText={passwordError?.message}
               />
             </div>
-
+  
             <div className="flex justify-center">
-  <Button
-    type="submit"
-    disabled={!isValid || isSubmitting}
-    className={`
-      w-full max-w-sm 
-      bg-green-600 
-      text-white 
-      hover:bg-blue-700 
-      disabled:bg-gray-300 
-      rounded-xl 
-      py-2 px-4 
-      transition duration-300 ease-in-out
-    `}
-  >
-    Submit
-  </Button>
-</div>
-
-
+              <Button
+                type="submit"
+                disabled={!isValid || isSubmitting}
+                className={`
+                  w-full max-w-sm 
+                  bg-green-600 
+                  text-white 
+                  hover:bg-blue-700 
+                  disabled:bg-gray-300 
+                  rounded-xl 
+                  py-2 px-4 
+                  transition duration-300 ease-in-out
+                `}
+              >
+                Submit
+              </Button>
+            </div>
+  
             <div className="text-center">
               <button
                 type="button"
@@ -133,6 +138,7 @@ const SignIn: React.FC = (): JSX.Element => {
       </Card>
     </div>
   );
+  
 };
 
 export default SignIn;

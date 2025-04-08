@@ -19,7 +19,7 @@ export interface MenuListItem {
  */
 export interface SideMenuProps {
   /** The child components of the side menu. */
-  children: React.ReactNode;
+  children?: React.ReactNode;
   /** Expand or Collapse of the side menu. */
   isSideMenuOpen: boolean;
 }

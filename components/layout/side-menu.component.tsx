@@ -6,9 +6,8 @@ import Image from 'next/image';
 
 import { MenuListItem, SideMenuProps } from './side-menu.types';
 import { menuList } from './side-menu.definitions';
-import TabPanel from '../atoms/tab-panel/tab-panel.component';
 
-function SideMenu({ children, isSideMenuOpen }: SideMenuProps) {
+function SideMenu({ isSideMenuOpen }: SideMenuProps) {
   const [value, setValue] = useState<string>('Profile');
   const router = useRouter();
 
@@ -67,11 +66,6 @@ function SideMenu({ children, isSideMenuOpen }: SideMenuProps) {
         </div>
       </div>
 
-      <div className="flex-1 p-6">
-      <TabPanel id={value} className="">
-  {children}
-</TabPanel>
-      </div>
     </div>
   );
 }
