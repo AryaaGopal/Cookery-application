@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { categoryList } from './app-header.definitions';
-import CategoryGrid from '../atoms/category/category-grid.component';
+import CategoryGrid from '../organisms/category/category-grid.component';
 
 
 const AppHeader = () => {
