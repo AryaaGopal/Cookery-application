@@ -7,8 +7,8 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { signInSchema, FormData } from './signin.schema';
 import Field from '@/components/atoms/field/field.component';
 import Button from '@/components/atoms/button/button.component';
-import Card from '@/components/atoms/card/card.componet';
-import Alert from '@/components/atoms/alerts/alerts.component';
+import Card from '@/components/atoms/card/card.component';
+import Alert from '@/components/molecules/alerts/alerts.component';
 import Image from 'next/image';
 
 const SignIn: React.FC = (): JSX.Element => {

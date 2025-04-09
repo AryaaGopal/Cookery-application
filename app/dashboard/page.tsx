@@ -1,5 +1,5 @@
 "use client"
-import RecipeGrid from '@/components/organisms/grid/recepie-grid';
+import RecipeGrid from '@/components/organisms/grid/recepie-grid.component';
 
 const Recipes = [
   {

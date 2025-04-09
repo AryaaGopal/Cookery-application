@@ -1,5 +1,6 @@
 'use client';
 
+import Button from '@/components/atoms/button/button.component';
 import React, { JSX } from 'react';
 
 type TailwindAlertProps = {
@@ -41,13 +42,13 @@ export default function Alert({
         ${className}
       `}
     >
-      <button
+      <Button
         className="absolute top-2 right-2 text-xl font-bold"
         onClick={() => setAlertOpen(false)}
         aria-label="Close Alert"
       >
         ×
-      </button>
+      </Button>
       {title && <h4 className="font-semibold text-lg mb-1">{title}</h4>}
       <div>{content}</div>
     </div>

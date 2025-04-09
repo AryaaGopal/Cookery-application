@@ -1,4 +1,4 @@
-import RecipeTile from '@/components/molecules/tiles/recepie-tiles.component';
+import RecipeTile from '@/components/molecules/tiles/recepie-tiles.';
 import React from 'react';
 import { RecipeGridProps } from './recepie-grid.types';
 
