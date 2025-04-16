@@ -1,4 +1,4 @@
-import { SvgIconComponent } from '@mui/icons-material';
+import { IconType } from 'react-icons/lib';
 
 /**
  * Represents the type of elements of the menu list array.
@@ -7,7 +7,7 @@ export interface MenuListItem {
   /** The name of the menu item. */
   name: string;
   /** The icon component for the menu item */
-  icon: SvgIconComponent;
+  icon: IconType;
   /** The permissions required for the menu item. */
   /** The link associated with the menu item */
   link: string;

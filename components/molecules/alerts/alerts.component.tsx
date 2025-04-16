@@ -5,7 +5,7 @@ import React, { JSX } from 'react';
 
 type TailwindAlertProps = {
   title?: string;
-  content: React.ReactNode;
+  content?: React.ReactNode;
   severity?: 'success' | 'error' | 'info' | 'warning';
   variant?: 'filled' | 'outlined' | 'standard';
   className?: string;

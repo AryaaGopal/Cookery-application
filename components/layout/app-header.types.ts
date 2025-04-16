@@ -1,8 +1,8 @@
-import { SvgIconComponent } from '@mui/icons-material';
+import { IconType } from 'react-icons/lib';
 
 export interface CategoryItem {
   name: string;
-  icon: SvgIconComponent;
+  icon: IconType;
   link: string;
 }
 

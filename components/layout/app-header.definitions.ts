@@ -1,25 +1,38 @@
 
-import LunchDiningOutlinedIcon from '@mui/icons-material/LunchDiningOutlined';
-import RestaurantMenuOutlinedIcon from '@mui/icons-material/RestaurantMenuOutlined';
-import TrendingUpOutlinedIcon from '@mui/icons-material/TrendingUpOutlined';
+import { GiHamburger } from "react-icons/gi";
+import { GiIndiaGate } from "react-icons/gi";
+import { HiTrendingUp } from "react-icons/hi";
+import { TbBowlChopsticksFilled } from "react-icons/tb";
+import { GiElephant } from "react-icons/gi";
 import { CategoryList } from './app-header.types';
 
 
 export const categoryList: CategoryList = [
     {
       name: 'Italian',
-      icon: LunchDiningOutlinedIcon,
+      icon: GiHamburger,
       link: '/dashboard/recipes/italian',
+
+    },
+    {
+      name: 'Chinese',
+      icon: TbBowlChopsticksFilled,
+      link: '/dashboard/recipes/chinese',
     },
     {
       name: 'North Indian',
-      icon: RestaurantMenuOutlinedIcon,
+      icon: GiIndiaGate,
       link: '/dashboard/recipes/north-indian',
     },
     {
-      name: 'Trending',
-      icon: TrendingUpOutlinedIcon,
-      link: '/dashboard/recipes/trending',
+      name: 'South Indian',
+      icon: GiElephant,
+      link: '/dashboard/recipes/south-indian',
     },
+    {
+      name: 'Trending',
+      icon: HiTrendingUp,
+      link: '/dashboard/recipes/trending',
+    }
   ];
   
